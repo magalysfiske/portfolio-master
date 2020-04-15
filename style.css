@@ -1,0 +1,91 @@
+/* Navbar */
+ul {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    list-style-type: none;
+    background-image: linear-gradient(to right, #1106ef, #f15a24);
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    overflow: hidden;}
+li {
+    float: left;}
+  
+li a {
+    display: block;
+    color: white;
+    
+    text-align: center;
+    padding:10px;
+    text-decoration: none;}
+  
+h1{
+    position: relative;
+    top:-200px;}
+
+li a:hover:not(.active) {
+    color: white;
+      }
+/* landing */
+.welcome{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size:50px;
+    color: white}
+
+#changingword {
+    color:black;
+      }
+
+
+/* grid */
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 10% 50%;
+    grid-gap: 50px;
+    padding-left: 45%;
+    padding-right: 90px;}
+
+/* about me paragraph */
+#paragraph{
+    position: relative;
+    top:-80px;
+    left: 80px;
+    padding-right: 30px;
+
+    font-size: 10pt;
+    color:black;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left}
+/* contact info */
+
+#contact{
+    font-family: 'Roboto Mono', monospace;
+    font-weight:400;
+    color: white;
+    position: relative;
+    top:-100px;
+    right:40px;
+}
+
+.contactInfo{
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    color: white;
+    font-weight: 200;}
+
+.resume:link{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-decoration: none}
+.resume:visited{
+    text-decoration: none}
+
+.insta:link{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-decoration: none}
+.insta:visited{
+    text-decoration: none}

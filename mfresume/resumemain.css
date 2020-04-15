@@ -1,0 +1,340 @@
+*{
+    /* outline: 2px dashed green; */
+    margin: 0;
+    padding:0;
+}
+/* @media screen and (max-width: 600px) {
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "q"
+        "h"
+        "e"
+        "b"
+        "f";
+}
+ */
+/* step one - build your grid */
+.container {
+    background-color: white;
+    padding:10%;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* height: 100%; */
+    display: grid;
+    grid-gap: 25px;
+    /* this will be  the same for everyone */
+    grid-template-columns: repeat(12, 1fr);
+    /* this will be customized, based on your grid, use pixels or % */
+    grid-template-rows: auto;
+    /* use letters from step 2 to build the grid */
+    grid-template-areas: 
+        "c c c c c c c c c c c c"
+        "b b b b b b q q q q q q"
+        "b b b b b b e e e e e e"
+        "r r r r r r e e e e e e"
+        "r r r r r r a a a a a a";
+}
+li{
+    font-size: .6em;
+    font-weight: 500;
+    padding:10px;
+}
+
+body{
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.Name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    /* font-style: oblique; */
+}
+
+ul{
+    list-style: none;
+}
+
+
+h1{
+    
+    font-style: oblique;
+    font-family: 'Roboto', sans-serif ;
+
+}
+
+h2{
+    padding-top: 1.6px;
+    font-size: .8em;
+}
+
+h3{
+    padding-top:10px;
+    font-size: .7em;
+}
+
+h4{
+/* font-style: italic; */
+font-size: .6em;
+}
+
+h5{
+    font-family: 'Roboto', 500 ;
+    font-style: bold;
+    font-size: .5em;
+}
+
+h6{
+    font-family: 'Open Sans', 300 ;
+    font-size: .3em;  
+    font-weight: lighter;  
+    font-style: normal;
+    display: inline;
+}
+
+p{
+    font-size: .6em;
+    font-weight: 500;
+    /* padding:10px; */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.location{
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+    font-weight: lighter;
+}
+
+.square {
+    margin-top: 15%; 
+    height: 400px;
+    background-color: #607d8a ;
+    z-index: 1;
+    margin-top: -190px;
+  } 
+
+.namesquare {
+    width: 480px;
+    height: 300px;
+    border: 2px solid whitesmoke;
+    z-index: 1;
+    grid-row-start: 1;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    margin-top: -25%;
+    margin-left: 40px;
+  }
+
+.me{
+      grid-column-start: 2;
+      grid-row-start: 1;
+      z-index: 2;
+      width: 400px;
+      height: 400px;
+      margin-left: -10px;
+      margin-top: -95px;
+      margin-left: 40px;
+  }
+
+.ycircle {
+    margin-left: -10px;
+    margin-top: -150px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    height: 500px;
+    width: 500px;
+    background-color:#fecc00;
+    opacity: 50%;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .date{
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+    font-weight: lighter;  
+  }
+/* step three - build a grid that becomes active when the pixels are 800px or less */
+@media screen and (max-width: 1000px) {
+
+    .container{
+        display: grid;
+        grid-gap: 15px;
+        /* grid is only one column, keep this way */
+        grid-template-columns: 1fr;
+        /* you can enter values, or auto will adjust the box sizes based on content */
+        grid-template-rows: auto;
+        grid-template-areas:
+        "c"
+        "b"
+        "a"
+        "e"
+        "q"
+        "r"
+    }
+    .WorkHistory {
+        grid-area: b;
+        margin-left: 25px;
+    }
+    .me{
+        grid-row-start: 1;
+        grid-column-start: 1;
+        z-index: 2;
+        width: 200px;
+        height: 200px;
+        margin-top: 90px;
+        margin-left: 25px;
+    }
+    .ycircle {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        margin-left: 1px;
+        margin-top: 70px;
+        height: 250px;
+        width: 250px;
+        background-color:#fecc00;
+        opacity: 50%;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .square {
+        margin-top: 15%; 
+        height: 400px;
+        width: 900px;
+        background-color: #607d8a ;
+        z-index: 1;
+        margin-top: -190px;
+      } 
+      .namesquare {
+        width: 350px;
+        height: 200px;
+        border: 2px solid whitesmoke;
+        z-index: 1;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        margin-top: -10px;
+        margin-left: 120px;
+      }
+      .Name {
+        color:white;
+        /* grid-area: h; */
+        margin-top: 80px;
+        margin-left: -935px;
+        font-size: 45px ;
+        /* border: 2px solid whitesmoke; */
+        z-index: 1;
+        /* grid-row-start: 1;
+        grid-column-start: 1; */
+        /* grid-column-end: 1; */
+         }
+         .awards {
+            grid-area: a;
+            margin-left: 25px;
+        }
+        .education {
+            grid-area: e;
+            margin-left: 25px;
+        }
+        .skills{
+            margin-top: 50px;
+             grid-area: q;
+             margin-left: 25px;
+        } 
+        .references{
+            grid-area: r;
+            margin-left: 25px;
+        } 
+        .tname{
+            font-size: 1em;
+            font-weight: bolder;
+            margin-left: 25px;
+        }
+        
+    
+}
+
+/* step 1 - assign each of your sections a letter */
+/* blockquote {
+    grid-area: q;
+    font-weight:300;
+    padding-bottom:30px;
+} */
+
+header {
+    color: white;
+    /* grid-area: h; */
+    margin-top: -80px;
+    margin-left: 80px;
+    /* border: 2px solid whitesmoke; */
+    z-index: 1;
+    grid-row-start: 1;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    
+  
+}
+
+.subheader{
+    color: white;
+    /* grid-area: h; */
+    margin-top: -10px;
+    margin-left: 80px;
+    /* border: 2px solid whitesmoke; */
+    z-index: 1;
+    grid-row-start: 1;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    font-size: 50px;
+}
+
+.WorkHistory {
+    grid-area: b;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.skills
+{
+    margin-top: 50px;
+     grid-area: q;
+}
+.education {
+    grid-area: e;
+}
+
+.awards {
+    grid-area: a;
+}
+
+/* footer{
+    grid-area: f;
+} */
+
+.square{
+    grid-area: c;
+}
+
+.references{
+    grid-area: r;
+    margin-left: 150px;
+} 
+
+.tname{
+    font-size: 1em;
+    font-weight: bolder;
+}
