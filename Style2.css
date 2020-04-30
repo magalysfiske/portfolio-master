@@ -43,7 +43,7 @@ body,html{margin:0;padding:0;}
 }
 
 .bg2::after {height:100vh; 
-  background-image: url(FinalFavicon.svg);
+  background-image: url(squid.jpg);
   background-repeat: no-repeat
 
 }
