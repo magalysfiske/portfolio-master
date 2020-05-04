@@ -41,7 +41,11 @@ img {
   background-color: rgba(0,0,0,0.8);
 }
 
-
+#bodoni{
+  font-size: 10pt ;
+  margin-top: -600px;
+  margin-left: 55px;
+}
 
 
 
@@ -82,7 +86,14 @@ img {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+
 }
+
+@media (max-width:735px){
+  #bodoni{
+    margin-top: 70px;
+  }
+  }
 
 h2{position: relative;
     left: 50px;

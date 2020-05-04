@@ -11,9 +11,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="slider.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
     </head>
     <body>
         <h2>Informational<br> Design</h2>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <!-- <span class="dot" onclick="currentSlide(2)"></span>  -->
+          <!-- <span class="dot" onclick="currentSlide(3)"></span>  -->
+        </div>
+        <br>
         <div class="slideshow-container">
 
             <div class="mySlides fade">
@@ -27,20 +34,33 @@
             <div class="mySlides fade">
               <img src="ART-ARTISTprint.jpg" width="400px">
             </div>
+
+            <!-- <div class="grid-container"> -->
+            <div id="art">
+              <h3>Art-Artist Final Poster</h3>
+                <h4>36 x 24 matte poster</h4>
+                <p>For this project I focused on analyzing my 
+                  relationship<br> with my education and what are things 
+                  related to my education<br> that are the most important to me. 
+                  Conducted research such <br>as surveys of classmates, 
+                  online databases and self-reflection <br>for personal 
+                  parts of the project. Four  sketches were done<br> before the  final product.
+                  During group critiques I would ask,<br>for advice on things 
+                  like font choice and color palettes.<Br> Most people preffered the 
+                  navy blue and white pallet but agreed<br> with me that it could be 
+                  pushed more. Once I brought a<br>sketch of the more vibrant color 
+                  pallet my group was more<br>enthusiastic about the project. 
+                </p>
+            </div>
+            </div>
+          
             
            
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
+        </div>  
         
         <script src="" async defer></script>
         <script>

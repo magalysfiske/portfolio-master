@@ -41,7 +41,12 @@ img {
   background-color: rgba(0,0,0,0.8);
 }
 
-
+#fa{
+  font-size: 10pt ;
+  margin-top: -300px;
+  margin-left: 50px;
+  font-family: 'Roboto Mono', monospace;
+}
 
 
 
@@ -83,6 +88,12 @@ img {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+@media (max-width:735px){
+  #fa{
+    margin-top: 70px;
+  }
+  }
 
 h2{position: relative;
     left: 50px;

@@ -1,6 +1,7 @@
 * {box-sizing: border-box}
 body {font-family: 'Roboto Mono', monospace; margin:0}
-.mySlides {display: none}
+body {font-family: 'Work Sans', sans-serif; margin: 0}
+.mySlides {display: none;}
 img {
     display: block;
     margin-left: auto;
@@ -13,6 +14,13 @@ img {
   position: relative;
   margin: auto;
 }
+
+/* .grid-container{
+  display: grid;
+  grid-template-rows: 10% 50%;
+  grid-gap: 50px;
+  padding-left: 45%;
+  padding-right: 90px;} */
 
 /* Next & previous buttons */
 .prev, .next {
@@ -41,8 +49,13 @@ img {
   background-color: rgba(0,0,0,0.8);
 }
 
-
-
+#art{
+  font-size: 10pt ;
+  margin-top: -600px;
+  margin-left: -290px;
+  font-family: 'Roboto Mono', monospace;
+  position: fixed;
+}
 
 
 /* The dots/bullets/indicators */
@@ -80,9 +93,24 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+/* @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-}
+} */
+
+@media (max-width:735px){
+  #art{
+    margin-top: 40px;
+    margin-left: 50px ;
+    position: relative;
+  }
+  #art p{
+    max-width: 390px;
+  }
+  #art p br{
+      display: none;
+  }
+  }
+
 
 h2{position: relative;
     left: 50px;

@@ -57,9 +57,9 @@ li a:hover:not(.active) {
     left: 80px;
     padding-right: 30px;
     line-height:1.6em ;
-    font-size: 11pt;
+    font-size: 12pt;
     color:white;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
     text-align: left}
 /* contact info */
 
@@ -149,10 +149,9 @@ li a:hover:not(.active) {
     top:-10px;
     left: 60px;
     padding-right: 20px;
-
-    font-size: 10pt;
+    font-size: 12pt;
     color:white;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
     text-align: left}
 
     #changingword {
@@ -166,12 +165,13 @@ li a:hover:not(.active) {
     }
     #paragraph{
         top:50px;
-        font-size: .6em;
+        font-size: .7em;
         margin-left: -70px;
-        line-height: 1.8em;
+        line-height: 1.6em;
         /* text-align: justify; */
         /* text-justify: inter-word; */
-        font-weight: lighter;
+        font-weight: 500;
+        font-family: 'Work Sans', sans-serif;
     }
     p br{
         display: none;
